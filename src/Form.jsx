@@ -1,3 +1,4 @@
+//Import components from both the react and tailwind libraries as well as the custom Input file
 import { Input } from './components/Input.jsx'
 import { FormProvider, useForm } from 'react-hook-form'
 import {

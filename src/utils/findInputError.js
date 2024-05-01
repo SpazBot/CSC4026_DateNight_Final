@@ -1,3 +1,4 @@
+//Function for deteccting errors in the form
 export function findInputError(errors, name) {
   const filtered = Object.keys(errors)
     .filter(key => key.includes(name))

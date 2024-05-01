@@ -1,3 +1,4 @@
+//Main react file exists mostly to host the ReactDOM and call the app
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'

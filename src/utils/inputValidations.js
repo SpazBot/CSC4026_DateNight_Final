@@ -1,4 +1,4 @@
-
+//Various types of validation functions
 export const name_validation = {
   name: 'name',
   label: 'name',
