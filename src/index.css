@@ -1,0 +1,22 @@
+main {
+  title{
+    font-family: 'URW Chancey L, cursive', 60;
+    font-size: 60px;
+  }
+  input {
+    width: 50%;
+    margin: 20px;
+    align-content: right;
+  }
+  label {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 20px;
+  }
+  body {
+    background-image: url('Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
