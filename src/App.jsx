@@ -1,7 +1,7 @@
 //Imports for nav and form components
+import { Header } from './components/Header.jsx'
 import { Navigation } from './components/Navigation.jsx'
 import { Form } from './Form'
-
 
 // Database with key value pairs for storing questions
 const questionDatabase = {
@@ -27,76 +27,13 @@ document.body.style.backgroundSize = "100%";
 document.body.style.backgroundRepeat = "no-repeat";
 document.body.style.alignItems = "center";
 
-/*
-// Create labels and input fields dynamically
-for (let i = 1; i <= 5; i++) {
-    // Create label
-    const label = document.createElement('label');
-    label.setAttribute('for', `field${i}`);
-    label.textContent = questionDatabase[`question${i}`];
-
-    // Create input field
-    const input = document.createElement('input');
-    input.setAttribute('type', 'text');
-    input.setAttribute('id', `field${i}`);
-    input.setAttribute('name', `field${i}`);
-
-    // Add line break
-    const br = document.createElement('br');
-    
-    // Append label, input, and line break to the body
-    document.body.appendChild(label);
-    document.body.appendChild(br);
-    document.body.appendChild(input);
-    document.body.appendChild(br);
-}
-
-// Create submit button
-const button = document.querySelector('button');
-
-const submitButton = document.createElement('button');
-submitButton.textContent = 'Submit Answers';
-
-// Append button to the body
-document.body.appendChild(submitButton);
-
-// Add click event listener to the button
-submitButton.addEventListener('click', function() {
-    // Get the input values
-    const field1Value = document.getElementById('field1').value;
-    const field2Value = document.getElementById('field2').value;
-    const field3Value = document.getElementById('field3').value;
-    const field4Value = document.getElementById('field4').value;
-
-    // Update answerDatabase with the input values
-    answerDatabase.answer1 = field1Value;
-    answerDatabase.answer2 = field2Value;
-    answerDatabase.answer3 = field3Value;
-    answerDatabase.answer4 = field4Value;
-
-    // Optional: You can console log the updated answerDatabase
-    console.log(answerDatabase);
-});
-
-//Validation function
-function validateInput(){
-  let x = document.forms["myForm"]["fname"].value;
-  if (x == "" || x.length > 20) {
-    alert("Invalid input");
-    return false;
-  }
-  else{
-    return x;
-  }
-}
-*/
-
 export default function App() {
   return (
-    <main style={{fontFamily: 'serif', fontSize: '40px', textAlign: 'center'}}>
+    <main>
       <div>
+        <Header />
         < Navigation />
-        <Form />
+        < Form />
       </div>
     </main>
   )
